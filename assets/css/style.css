@@ -41,12 +41,13 @@ html {
   top: 50%;
   left: 50%;
   width: 100px;
-  transform: translateX(-50%) translateY(-70%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .al_mn_logo {
-  transform: translateX(-2%);
+  transform: translateX(0%);
 }
+
 .logotype_text {
   font-size: 12px;
   letter-spacing: 3px;
@@ -66,6 +67,6 @@ html {
 .al_mn_infos {
   width: 100%;
   margin: 0 auto;
-  padding:30px 20px;
+  padding:30px 0;
   text-align: center;
 }
