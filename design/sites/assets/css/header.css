@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*header*/
+#al_hd_clear_b {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.al_hd_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.al_hd_logo {
+    width: 60px;
+}
