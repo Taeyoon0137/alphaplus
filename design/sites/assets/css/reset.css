@@ -2,12 +2,19 @@
 
 /* reset height */
 html, body {
-  height:100%;
+    height:100%;
 }
 
 body {
     position: relative;
 }
+
+/*img reset*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* reset margin */
 body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
 body {margin: 0 auto;}

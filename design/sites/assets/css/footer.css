@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
-/*footer*/
-#al_fd_clear_b {
+/*main footer, only copyrights*/
+#al_fd_unclear_b {
+    z-index: 9999;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 80px;
+    background-color: #fff;
 }
 
 .al_fd_wrapper {
