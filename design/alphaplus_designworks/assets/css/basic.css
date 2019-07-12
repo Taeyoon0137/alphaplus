@@ -114,7 +114,36 @@
 /* header done */
 
 /* navigator */
+#fs-navigator {
+}
+
+ .fs_nav .nv_buttons {
+   opacity: 0;
+   transition-delay: 0.3s;
+   transition: 0.3s;
+}
+
+ .fs_nav .nv_buttons ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
+}
+
+ .fs_nav .nv_buttons ul li {
+  display: inline;
+  font-size: 60px;
+  letter-spacing: -1.5px;
+  margin: 0 50px;
+}
+
+ .fs_nav .nv_buttons ul li a {
+  color: #fff;
+}
+
 .nav_bg {
+  z-index: -1;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -124,7 +153,15 @@
   transition: 0.5s;
 }
 
+/* abled */
+.nav--abled .fs_nav .nv_buttons {
+  opacity: 1;
+  transition-delay: 0.3s;
+  transition: 0.3s;
+}
+
 .nav--abled .nav_bg {
+  z-index: -1;
   position: absolute;
   top: 0%;
   left: 0%;
