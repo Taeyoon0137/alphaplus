@@ -49,15 +49,15 @@
     <body>
         <script type="text/javascript">
           window.onload = ()=> {
-          document.querySelector(".sample").addEventListener("click", ()=> {
-          document.querySelector("#main-header").classList.remove("nav--disabled");
-          document.querySelector("#main-header").classList.add("nav--abled");
+          document.querySelector(".nav_position").addEventListener("click", ()=> {
+          document.querySelector("#main-header").classList.toggle("nav--abled");
+          document.querySelector("#fs-navigator").classList.toggle("nav--abled");
           })
           }
         </script>
 
         <!--header-->
-        <header id="main-header" class="mn_header head--white head--top nav--disabled">
+        <header id="main-header" class="mn_header head--white head--top">
           <div class="mn_hd_pos">
             <div class="mn_hd_wrapper">
               <div class="logotype">
@@ -72,10 +72,18 @@
                   <span class="nv_bt nv_bt_bottom"></span>
                 </div>
               </div>
-              <div class="sample">hello</div>
             </div>
           </div>
         </header>
+
+        <!-- navigator -->
+        <nav id="fs-navigator" class="">
+          <div class="fs_nav">
+            <div class="nav_bg">
+
+            </div>
+          </div>
+        </nav>
 
         <!--Javascript Library-->
         <script src="assets/js/jquery.min_1.12.4.js"></script>
