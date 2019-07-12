@@ -47,35 +47,64 @@
 
     </head>
     <body>
-        <script type="text/javascript">
-          window.onload = ()=> {
-          document.querySelector(".sample").addEventListener("click", ()=> {
-          document.querySelector("#main-header").classList.remove("nav--disabled");
-          document.querySelector("#main-header").classList.add("nav--abled");
-          })
-          }
-        </script>
-
         <!--header-->
-        <header id="main-header" class="mn_header head--white head--top nav--disabled">
-          <div class="mn_hd_pos">
-            <div class="mn_hd_wrapper">
-              <div class="logotype">
-                <a href="index.html">
-                  <span class="lg_alphaplus">Alphaplus</span>
-                  <span class="lg_designworks">Designworks</span>
-                </a>
-              </div>
-              <div class="nav_position">
-                <div class="nav_button">
-                  <span class="nv_bt nv_bt_top"></span>
-                  <span class="nv_bt nv_bt_bottom"></span>
-                </div>
-              </div>
-              <div class="sample">hello</div>
+        <header id="al_hd_clear_w">
+          <div class="container">
+            <div class="logotype">
+              <a href="index.html">
+                <img class="alphaplus_logo" src="img/alphaplus_logo_w.svg" alt="alphaplus logo">
+              </a>
             </div>
+            <nav class="al_gn_clwhite">
+              <ul class="al_gn_list">
+                <li><a href="#">about</a></li>
+                <li><a href="#">designworks</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </nav>
           </div>
         </header>
+
+        <!--==========================================================-->
+        <!--==========================================================-->
+        <!--==========================================================-->
+
+        <main id="al_mn_content">
+          <!--portfolio-->
+          <div class="al_mn_portfolio">
+            <div class="al_mn_pos">
+              <div class="portfolio_1"></div>
+              <div class="portfolio_2"></div>
+              <div class="portfolio_3"></div>
+              <div class="portfolio_4"></div>
+              <div class="portfolio_5"></div>
+            </div>
+          </div>
+
+          <!--slideshow-->
+          <div class="al_mn_fimg">
+            <a  href="#">
+              <img src="img/pawel-czerwinski-snrPBiLzZaE-unsplash.jpg" alt="shaer, save the world">
+            </a>
+          </div>
+        </main>
+
+        <!--==========================================================-->
+        <!--==========================================================-->
+        <!--==========================================================-->
+
+        <!--footer-->
+        <footer id="al_ft_clear_w">
+          <div class="container">
+            <div class="al_ft_copyrights">
+              <a href="#">
+                alphaplus designworks<br>
+                copyrights 2019. all rights reserved
+              </a>
+            </div>
+          </div>
+        </footer>
 
         <!--Javascript Library-->
         <script src="assets/js/jquery.min_1.12.4.js"></script>

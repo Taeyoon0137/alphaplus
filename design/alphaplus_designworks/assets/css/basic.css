@@ -1,173 +1,105 @@
 @charset "UTF-8";
 
-body {
-  min-height: 780px;
+.sample {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #eee;
 }
 
 /* header */
-#al_hd_clear_w {
-  z-index: 9999;
-  position: relative;
+#main-header {
+  position: fixed;
   width: 100%;
-  height: 70px;
+  height: 100px;
+  color: #000;
+  background-color: #eee;
 }
 
-#al_hd_clear_w .container {
-  position: relative;
-  max-width: 100%;
-  min-width: 980px;
+#main-header .mn_hd_pos {
   height: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
+  padding: 0 45px;
 }
 
-#al_hd_clear_w .container .logotype {
-  position: absolute;
-  float: left;
-  top: 50%;
-  transform: translateY(-43%);
-  width: 60px;
-}
-
-#al_hd_clear_w .container .logotype .alphaplus_logo {
-
-}
-
-#al_hd_clear_w .al_gn_clwhite {
+#main-header .mn_hd_pos .mn_hd_wrapper {
   position: relative;
-  float: right;
-}
-
-#al_hd_clear_w .al_gn_clwhite .al_gn_list li {
-  display: inline-block;
-  height: 70px;
-  margin: auto 15px;
-  line-height: 70px;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-#al_hd_clear_w .al_gn_clwhite .al_gn_list li a {
-  color: #fff;
-}
-
-/*===================================================================*/
-/*===================================================================*/
-/*===================================================================*/
-
-/* designworks */
-#al_mn_content .al_mn_portfolio {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateX(-20px) translateY(-50%);
-  transition: 0.5s ;
-}
-
-#al_mn_content .al_mn_portfolio:hover {
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translateX(-50px) translateY(-50%);
-  transition: 0.3s;
-}
-
-#al_mn_content .al_mn_portfolio:active {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  transition: 0.8s;
-}
-
-#al_mn_content .al_mn_portfolio .al_mn_pos {
-  position: relative;
-}
-
-#al_mn_content .al_mn_portfolio .al_mn_pos .portfolio_1 {
-  position: absolute;
-  left: 0px;
-  width: 288px;
-  height: 512px;
-  transform: translateY(-50%);
-  background-color: #fff;
-}
-
-#al_mn_content .al_mn_portfolio .al_mn_pos .portfolio_2 {
-  position: absolute;
-  left: 298px;
-  width: 288px;
-  height: 512px;
-  transform: translateY(-50%);
-  background-color: #fff;
-}
-
-#al_mn_content .al_mn_portfolio .al_mn_pos .portfolio_3 {
-  position: absolute;
-  left: 596px;
-  width: 288px;
-  height: 512px;
-  transform: translateY(-50%);
-  background-color: #fff;
-}
-
-#al_mn_content .al_mn_portfolio .al_mn_pos .portfolio_4 {
-  position: absolute;
-  left: 894px;
-  width: 288px;
-  height: 512px;
-  transform: translateY(-50%);
-  background-color: #fff;
-}
-
-#al_mn_content .al_mn_portfolio .al_mn_pos .portfolio_5 {
-  position: absolute;
-  left: 1192px;
-  width: 288px;
-  height: 512px;
-  transform: translateY(-50%);
-  background-color: #fff;
-}
-
-
-/* slideshow */
-#al_mn_content {
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
-/*===================================================================*/
-/*===================================================================*/
-/*===================================================================*/
-
-/* footer */
-#al_ft_clear_w {
+/* logotype */
+#main-header .mn_hd_pos .mn_hd_wrapper .logotype {
   position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0%;
+  top: 50%;
   left: 0%;
+  transform: translateY(-50%);
 }
 
-#al_ft_clear_w .container {
+#main-header .mn_hd_pos .mn_hd_wrapper .logotype a {
+  font-size: 24px;
+}
+
+#main-header .mn_hd_wrapper .logotype .lg_alphaplus {
+  font-weight: 700;
+  display: inline;
+}
+
+#main-header .mn_hd_wrapper .logotype .lg_designworks {
+  font-weight: 400;
+  display: inline;
+}
+
+/* nav button */
+#main-header .nav_position {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 54px;
+  height: 54px;
+  transform: translateY(-50%);
+}
+
+#main-header .nav_button {
   position: relative;
-  max-width: 100%;
-  min-width: 980px;
+  width: 100%;
   height: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 
-#al_ft_clear_w .container .al_ft_copyrights {
-  text-align: left;
-  padding-bottom: 20px;
-  font-size: 14px;
-  line-height: 20px;
+#main-header .nv_bt {
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  background-color: #000;
 }
 
-#al_ft_clear_w .container .al_ft_copyrights a {
-  color: #fff;
+/* disabled  */
+.nav--disabled .nv_bt_top {
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.5s;
+}
+
+.nav--disabled .nv_bt_bottom {
+  bottom: 33%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.5s;
+}
+
+/* abled */
+.nav--abled .nv_bt_top {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+  transition: 0.5s;
+}
+
+.nav--abled .nv_bt_bottom {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(-45deg);
+  transition: 0.5s;
 }

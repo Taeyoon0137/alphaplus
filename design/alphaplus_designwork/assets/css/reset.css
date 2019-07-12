@@ -5,16 +5,25 @@ html, body {
     height:100%;
 }
 
+body {
+    position: relative;
+}
+
+/*img reset*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* reset margin */
 body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
 body {margin: 0 auto;}
-
 /* reset a link */
 a {color: #000; text-decoration: none;}
-a:hover {color: #000;}
+a:hover {color: #2698cb;}
 
 /* reset fonts */
-body, textarea, select, button, table {font-family: 'century-gothic', sans-serif; color: #222; font-weight: 400; font-size: 13px; line-height: 1.5;}
+body, input, textarea, select, button, table {font-family: 'century-gothic', sans-serif; color: #222; font-weight: 400; font-size: 13px; line-height: 1.5;}
 
 /* reset font style */
 em,address {font-style: normal;}
