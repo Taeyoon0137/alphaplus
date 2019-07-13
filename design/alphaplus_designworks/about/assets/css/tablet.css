@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* header */
+#main-header {
+  height: 80px;
+}
+
+#main-header .mn_hd_pos {
+  padding: 0 35px;
+}
+
+#main-header .mn_hd_pos .mn_hd_wrapper {
+}
+
+/* logotype */
+#main-header .mn_hd_pos .mn_hd_wrapper .logotype {
+}
+
+#main-header .mn_hd_pos .mn_hd_wrapper .logotype a {
+  font-size: 21px;
+}
+
+#main-header .mn_hd_wrapper .logotype .lg_alphaplus {
+  display: inherit;
+}
+
+#main-header .mn_hd_wrapper .logotype .lg_a {
+  display:  none;
+}
+
+#main-header .mn_hd_wrapper .logotype .lg_designworks {
+  display: inherit;
+}
+
+/*nav abled */
+.nav--abled .mn_hd_pos .mn_hd_wrapper .logotype a {
+}
+/* logotype done */
+
+/* nav button */
+#main-header .nav_position {
+  width: 48px;
+  height: 48px;
+  transform: translateY(-50%);
+}
+
+#main-header .nav_button {
+}
+
+ .nv_bt {
+  width: 42px;
+  height: 2px;
+}
+
+ .nv_bt_top {
+}
+
+ .nv_bt_bottom {
+}
+
+/* abled */
+.nav--abled .nv_bt {
+}
+
+.nav--abled .nv_bt_top {
+}
+
+.nav--abled .nv_bt_bottom {
+}
+/* nav button done */
+/* header done */
+
+/* navigator */
+#fs-navigator {
+}
+
+ .fs_nav .nv_buttons {
+}
+
+ .fs_nav .nv_buttons ul {
+}
+
+ .fs_nav .nv_buttons ul li {
+  display: block;
+  font-size: 60px;
+  letter-spacing: -1.5px;
+  margin: 0 50px;
+  line-height: 90px;
+}
+
+ .fs_nav .nv_buttons ul li a {
+}
+
+.nav_bg {
+}
+
+/* abled */
+.nav--abled .fs_nav .nv_buttons {
+}
+
+.nav--abled .nav_bg {
+}
+/* navigator done */
