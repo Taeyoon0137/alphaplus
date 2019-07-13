@@ -10,12 +10,14 @@
         <title>Alphaplus Designwork - the design portfolio</title>
 
         <!--CSS-->
+        <!--basic CSS-->
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/basic.css">
-        <link rel="stylesheet" href="assets/css/about.css">
         <link rel="stylesheet" media="screen and (min-width: 1440px)" href="assets/css/desktop.css">
         <link rel="stylesheet" media="screen and (max-width: 1439px) and (min-width: 736px)" href="assets/css/tablet.css">
         <link rel="stylesheet" media="screen and (max-width: 735px)" href="assets/css/mobile.css">
+        <!--page CSS-->
+        <link rel="stylesheet" href="assets/css/about.css">
 
 
         <!--Favicon-->
@@ -52,22 +54,12 @@
 
     </head>
     <body>
-        <!--nav button active-->
-        <script type="text/javascript">
-          window.onload = ()=> {
-          document.querySelector(".nav_position").addEventListener("click", ()=> {
-          document.querySelector("#main-header").classList.toggle("nav--abled");
-          document.querySelector("#fs-navigator").classList.toggle("nav--abled");
-          })
-          }
-        </script>
-
         <!--header-->
-        <header id="main-header" class="mn_header head--white head--top">
+        <header id="main-header" class="mn_header head--top">
           <div class="mn_hd_pos">
             <div class="mn_hd_wrapper">
               <div class="logotype">
-                <a href="index.html">
+                <a href="../index.html">
                   <span class="lg_alphaplus">Alphaplus</span>
                   <span class="lg_a">A.</span>
                   <span class="lg_designworks">Designworks</span>
@@ -89,7 +81,7 @@
             <div class="nav_bg"></div>
             <div class="nv_buttons">
               <ul>
-                <li><a href="#">about</a></li>
+                <li><a href="index.html">about</a></li>
                 <li><a href="#">designworks</a></li>
                 <li><a href="#">blog</a></li>
                 <li><a href="#">contact</a></li>
@@ -120,6 +112,7 @@
         </main>
 
         <!--Javascript Library-->
+        <script src="assets/js/alphaplus_header.js"></script>
         <script src="assets/js/jquery.min_1.12.4.js"></script>
         <script src="assets/js/modernizr-custom.js"></script>
         <script src="assets/js/ie-checker.js"></script>
