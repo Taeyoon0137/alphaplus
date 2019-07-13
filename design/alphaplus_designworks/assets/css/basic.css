@@ -5,13 +5,11 @@
   z-index: 9999;
   position: fixed;
   width: 100%;
-  height: 100px;
   color: #000;
 }
 
 #main-header .mn_hd_pos {
   height: 100%;
-  padding: 0 45px;
 }
 
 #main-header .mn_hd_pos .mn_hd_wrapper {
@@ -29,11 +27,10 @@
 }
 
 #main-header .mn_hd_pos .mn_hd_wrapper .logotype a {
-  font-size: 24px;
   transition: 0.5s;
 }
 
-#main-header .mn_hd_wrapper .logotype .lg_alphaplus {
+#main-header .mn_hd_wrapper .logotype .lg_alphaplus, .lg_a {
   font-weight: 700;
   display: inline;
 }
@@ -45,11 +42,9 @@
 
 /*nav abled */
 .nav--abled .mn_hd_pos .mn_hd_wrapper .logotype a {
-  font-size: 24px;
   color: #fff;
-  transition: 0.5s
+  transition: 0.5s;
 }
-
 /* logotype done */
 
 /* nav button */
@@ -57,8 +52,6 @@
   position: absolute;
   top: 50%;
   right: 0%;
-  width: 54px;
-  height: 54px;
   transform: translateY(-50%);
 }
 
@@ -70,8 +63,6 @@
 
  .nv_bt {
   position: absolute;
-  width: 48px;
-  height: 3px;
   background-color: #000;
 }
 
@@ -91,9 +82,6 @@
 
 /* abled */
 .nav--abled .nv_bt {
- position: absolute;
- width: 48px;
- height: 3px;
  background-color: #fff;
 }
 
@@ -128,14 +116,9 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  white-space: nowrap;
 }
 
  .fs_nav .nv_buttons ul li {
-  display: inline;
-  font-size: 60px;
-  letter-spacing: -1.5px;
-  margin: 0 50px;
 }
 
  .fs_nav .nv_buttons ul li a {
@@ -170,3 +153,4 @@
   background-color: #000;
   transition: 0.5s;
 }
+/* navigator done */
