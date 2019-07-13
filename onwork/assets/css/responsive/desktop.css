@@ -21,23 +21,47 @@
   display: none;
 }
 
+/* nav button */
+.al-header .al-container .al-navbutton {
+  width: 54px;
+  height: 54px;
+}
+
+.al-header .al-container .al-navbutton .al-nv-pos .al-nv {
+  width: 48px;
+  height: 3px;
+}
+
 /* navigator --------------------------------------------------------- */
 #al-navigation {
-  position: relative;
   width: 100%;
   height: 100%;
 }
 
-.al-navigation .al-tonedown {
-
-}
-
 .al-navigation .al-container {
-  top: 0%;
-  right: 0%;
+  float: right;
   width: 0px;
   height: 100%;
+  overflow: hidden;
   transition: 0.5s;
+}
+
+.al-navigation .al-container .al-nav-menus ul{
+  top: 40%;
+  right: 595px;
+  transform: translateX(100%) translateY(-50%);
+}
+
+.al-navigation .al-container .al-nav-menus ul li a{
+  font-size: 35px;
+  line-height: 80px;
+}
+
+.al-navigation .al-container .al-nav-menus .al-copyrights {
+  bottom: 45px;
+  right: 595px;
+  transform: translateX(100%);
+  font-size: 18px;
 }
 
 /* nav active */
