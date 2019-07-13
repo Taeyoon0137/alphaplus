@@ -126,7 +126,6 @@
 }
 
 .nav_bg {
-  z-index: -1;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -144,8 +143,7 @@
 }
 
 .nav--abled .nav_bg {
-  z-index: -1;
-  position: absolute;
+\  position: absolute;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -154,3 +152,13 @@
   transition: 0.5s;
 }
 /* navigator done */
+
+/* main slide */
+#mn-slideshow {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1562941898-ace64adaa1fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3334&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
