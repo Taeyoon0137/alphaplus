@@ -8,8 +8,6 @@
 
 #al-header .al-margin {
   padding: 0 45px;
-  max-width: 100%;
-  height: 100%;
 }
 
 /* logotype */
@@ -48,7 +46,7 @@
 
 .al-navigation .al-container .al-nav-menus ul{
   top: 40%;
-  right: 595px;
+  right: 515px;
   transform: translateX(100%) translateY(-50%);
 }
 
@@ -59,12 +57,39 @@
 
 .al-navigation .al-container .al-nav-menus .al-copyrights {
   bottom: 45px;
-  right: 595px;
+  right: 515px;
   transform: translateX(100%);
   font-size: 18px;
 }
 
 /* nav active */
 .nav--active .al-container {
-  width: 640px;
+  width: 560px;
+}
+
+/* main frame -------------------------------------------------------- */
+#al-content {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.al-content .al-cont-area {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.al-content .al-cont-area .al-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: gray;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* nav active */
+.nav--active .al-cont-area {
+  width: calc(100% - 560px);
 }
