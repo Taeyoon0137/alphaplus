@@ -1,212 +1,111 @@
 @charset "UTF-8";
 
+/* layout */
 .bg {
   background-color: rgba(0,0,0,0.2);
 }
 
-/* header ------------------------------------------------------------ */
-#header {
-  z-index: 9999;
-  position: fixed;
-  width: 100%;
-
-  height: 80px;
-}
-
-#header .container {
-  padding: 0 20px;
+.container {
+  max-width: 1600px;
   height: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+  clear: both;
 }
 
-#header .container .position {
+/* highlight */
+.highlight {
+}
+
+.highlight .highlight_columns {
+  padding: 80px 0 100px 0;
+}
+
+.highlight .highlight_columns .highlight_container {
+  margin-left: -20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: calc((100% / 2) - 20px);
+  margin-left: 20px;
+  padding-top: calc(((100% / 2) - 20px) + 75px);
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_bound {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 75px);
+  padding-bottom: 0;
 }
 
-#header .container .position .logotype {
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .highlight_item_img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#header .container .position .nav-position {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translateY(-50%);
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .highlight_item_img img {
+  width: 100%;
 }
 
-#header .container .position .nav-position .nav-button-border {
-  position: relative;
-
-  width: 42px;
-  height: 42px;
+/* footer */
+.footer {
+  height: 60px;
 }
 
-#header .container .position .nav-position .nav-button-border .nav-elements {
-  position: absolute;
-  left: 50%;
+.footer .footer_columns {
+  max-width: 100%;
 }
 
-.header .container .position .nav-position .nav-button-border .nav-elements {
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #000;
-  transition: 0.5s;
-
-  width: 38px;
-  height: 2px;
+.footer .footer_columns .footer_us ul {
+  float: left;
 }
 
-.header .container .position .nav-position .nav-button-border .nav-button-1 {
-  top: 38%;
+.footer .footer_columns .footer_link ul {
+  float: right;
 }
 
-.header .container .position .nav-position .nav-button-border .nav-button-2 {
-  top: 62%;
+.footer .footer_columns .footer_items {
+  display: inline;
+  line-height: 60px;
+  font-size: 18px;
+  color: #999;
 }
 
-/* nav active */
-.nav--active .container .position .nav-position .nav-button-border .nav-elements {
-  background-color: #FFF;
+.footer .footer_columns .footer_items:hover {
+  color: #000;
 }
 
-.nav--active .container .position .nav-position .nav-button-border .nav-button-1 {
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+.footer .footer_columns .footer_items .footer_item {
+  font-weight: 400;
 }
 
-.nav--active .container .position .nav-position .nav-button-border .nav-button-2 {
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(-45deg);
+.footer .footer_columns .footer_us .footer_items .footer_item {
+  margin-right: 20px;
 }
 
-/* logotype */
-.header .container .position .logotype h1 {
-  font-size: 20px;
-}
-
-.header .container .position .logotype h1 .logo-alphaplus {
-  display: inherit;
-}
-
-.header .container .position .logotype h1 .logo-a {
+.footer .footer_columns .footer_us .footer_items .workwithus .realcontact {
   display: none;
 }
 
-/* navigation -------------------------------------------------------- */
-#navigation {
-  z-index: 9998;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-#navigation .container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.navigation .container .navigation-menu {
-  position: absolute;
-  right: 0;
-  width: 0;
-  height: 100%;
-  overflow: hidden;
-  background-color: #000;
-  transition: 0.5s;
+.footer .footer_columns .footer_us .footer_items:hover .workwithus .fakecontact{
+  text-decoration: line-through;
 }
 
-.navigation .container .navigation-menu ul {
-  position: absolute;
-  top: 50%;
-  right: calc(400px - 28px);
-  transform: translateX(100%) translateY(-50%);
+.footer .footer_columns .footer_us .footer_items:hover .workwithus .realcontact{
+  display: inline;
 }
 
-.navigation .container .navigation-menu ul .typo--nav {
-  font-size: 24px;
-}
-
-.navigation .container .navigation-menu ul .nav-menu-item {
-  color: #fff;
-  margin-bottom: 15px;
-  transition: 0.5;
-}
-
-.navigation .container .navigation-menu ul .nav-menu-item:hover {
-  text-decoration: underline;
-  transition: 0.5;
-
-}
-
-/* nav active */
-.nav--active .container .navigation-menu {
-  width: 400px;
-}
-
-/* content area ----------------------------------------------------- */
-#wrapper {
-  position: relative;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.wrapper .content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-}
-
-#wrapper .content main {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-}
-
-
-/* nav active */
-.nav--active .content {
-  width: calc(100% - 400px);
-  height: 100%;
-}
-
-/* content area ----------------------------------------------------- */
-/* slide over */
-.slideover{
-  height: 100%;
-  width: 100%;
-}
-
-.slideover .slideover-content {
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/dw_20thdesigner_m1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* highlights */
-.highlights {
-  width: 100%;
-  height: 1080px;
-}
-/* footer */
-footer {
-  width: 100%;
-  height: 200px;
-  background-color: #fafafa;
-}
-
-footer .container {
-  width: 1440px;
-  margin: 0 auto;
-  padding-top: 25px;
+.footer .footer_columns .footer_link .footer_items .footer_item {
+  margin-left: 20px;
 }

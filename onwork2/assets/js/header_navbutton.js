@@ -8,4 +8,6 @@ window.onload = ()=> {
   document.querySelector("#navigation").classList.toggle("nav--active");
   document.querySelector("#wrapper").classList.toggle("nav--active");
   })
+
+  })
 }
