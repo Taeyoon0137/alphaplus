@@ -13,6 +13,94 @@
   clear: both;
 }
 
+/* header */
+.header {
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+}
+
+.header .header_columns {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+
+.header .header_columns .wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.header .header_columns .header_logotype {
+  float: left;
+}
+
+.header .header_columns .header_logotype a {
+  font-size: 18px;
+}
+
+.header .header_columns .header_logotype .logotype_alphaplus,
+.header .header_columns .header_logotype .logotype_a {
+  font-weight: 700;
+}
+
+.header .header_columns .header_logotype .logotype_a {
+ display: none;
+}
+
+.header .header_columns .header_navigation .nav_link {
+ display: inline;
+ font-size: 18px;
+ padding-left: 20px;
+}
+
+.header .header_columns .header_navigation {
+  float: right;
+}
+
+.header .header_background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+}
+
+
+/* slideover */
+.slideover {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.slideover .slideover_buttonarea {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  transition: 0.2s;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideover .slideover_buttonarea:hover {
+  opacity: 1;
+}
+
+.slideover .slideover_nextbuttonarea {
+  left: 0;
+}
+
+.slideover .slideover_previousbuttonarea {
+  right: 0;
+}
+
 /* highlight */
 .highlight {
 }
@@ -26,36 +114,103 @@
 }
 
 .highlight .highlight_columns .highlight_container .highlight_item {
-  position: relative;
-  overflow: hidden;
   float: left;
   width: calc((100% / 2) - 20px);
   margin-left: 20px;
-  padding-top: calc(((100% / 2) - 20px) + 75px);
 }
 
-.highlight .highlight_columns .highlight_container .highlight_item .highlight_bound {
-  position: absolute;
-  top: 0;
+.highlight .highlight_columns .highlight_container .highlight_item a {
   width: 100%;
-  background-color: black;
 }
+
 
 .highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos {
   position: relative;
   width: 100%;
-  height: calc(100% - 75px);
-  padding-bottom: 0;
+  height: 0;
+  padding-bottom: 75%;
 }
 
-.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .highlight_item_img {
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
 }
 
-.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .highlight_item_img img {
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgstop, .highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgmove {
   width: 100%;
+  height: 100%;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgstop {
+  background-color: gray;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgmove {
+  display: none;
+  background-color: black;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_item_pos .img_area_big .sample_imgstop {
+  display: none;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_item_pos .img_area_big .sample_imgmove {
+  display: block;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_text {
+  text-decoration: underline;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_text {
+  max-width: 100%;
+  height: 100px;
+  padding: 15px 5% 0 0;
+  font-size: 18px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_text .highlight_genre {
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_text .highlight_area {
+  display: none;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_text .highlight_genre {
+  display: none;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_text .highlight_area {
+  display: block;
+}
+
+.highlight .highlight_columns .highlight_more {
+  width: 220px;
+  height: 60px;
+  margin: 30px auto 0 auto;
+  border: 1px solid black;
+
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+}
+
+.highlight .highlight_columns .highlight_more:hover {
+  border: 1px solid black;
+  background-color: #000;
+
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
 }
 
 /* footer */
@@ -77,12 +232,12 @@
 
 .footer .footer_columns .footer_items {
   display: inline;
-  line-height: 60px;
+  line-height: 80px;
   font-size: 18px;
   color: #999;
 }
 
-.footer .footer_columns .footer_items:hover {
+.footer .footer_columns .footer_link:hover {
   color: #000;
 }
 
@@ -108,4 +263,22 @@
 
 .footer .footer_columns .footer_link .footer_items .footer_item {
   margin-left: 20px;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item .link_facebook_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_instagram_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_twitter_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_github_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_facebook,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_instagram,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_twitter,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_github {
+  display: none;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_facebook_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_instagram_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_twitter_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_github_r {
+  display: inherit;
 }
