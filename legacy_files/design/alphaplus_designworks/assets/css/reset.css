@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* reset height */
+html, body {
+    height:100%;
+}
+
+/* reset margin */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
+body {margin: 0 auto;}
+
+/* reset a link */
+a {color: #000; text-decoration: none;}
+a:hover {color: #000;}
+
+/* reset fonts */
+body, textarea, select, button, table {font-family: 'century-gothic', sans-serif; color: #222; font-weight: 400; font-size: 13px; line-height: 1.5;}
+
+/* reset font style */
+em,address {font-style: normal;}
+
+/* reset bullet */
+ul,li,ol {list-style:none;}
+
+/* reset titles */
+h1,h2,h3,h4,h5,h6 {font-size: 16px; font-weight: 400;}
+
+/* reset border */
+img,fieldset {border:0 none;}
+
+/* reset button */
+button {border: 0;}
+
+/* reset responsive */
+video,img {width: 100%;}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}

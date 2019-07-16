@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* header */
+#al-header {
+  height: 60px;
+  font-size: 20px;
+}
+
+#al-header .al-margin {
+  padding: 0 20px;
+}
+
+/* logotype */
+.al-header  .al-margin .al-container .al-logotype .al-a, .al-header .al-container .al-logotype .al-designworks {
+  display: inherit;
+}
+
+.al-header  .al-margin .al-container .al-logotype .al-alphaplus {
+  display: none;
+}
+
+/* nav active */
+.nav--active .al-margin .al-container .al-logotype {
+  color: #fff;
+}
+
+/* nav button */
+.al-header  .al-margin .al-container .al-navbutton {
+  width: 35px;
+  height: 35px;
+}
+
+.al-header  .al-margin .al-container .al-navbutton .al-nv-pos .al-nv {
+  width: 32px;
+  height: 2px;
+}
+
+/* navigator --------------------------------------------------------- */
+#al-navigation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.al-navigation .al-container {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.al-navigation .al-container .al-nav-menus ul{
+  top: 150px;
+  left: 20px;
+}
+
+.al-navigation .al-container .al-nav-menus ul li a{
+  font-size: 35px;
+  line-height: 80px;
+}
+
+.al-navigation .al-container .al-nav-menus .al-copyrights {
+  display: none;
+}
+
+/* nav active */
+.nav--active .al-container {
+  height: 100%;
+}
+
+/* main frame -------------------------------------------------------- */
+#al-content {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.al-content .al-cont-area {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.al-content .al-cont-area .al-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: gray;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
