@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/* layout */
+.container {
+  height: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* header =================================================================== */
+#header{
+  z-index: 9999;
+  width: 100%;
+}
+
+/* header position */
+.head--fixed {
+  position: fixed;
+}
+
+.head--relative {
+  position: relative;
+}
+
+/* header theme */
+/* clear */
+.head--clear {
+  color: #000;
+}
+
+.head--clear .header_columns .header_navigation .nav_link {
+ color: #000;
+}
+
+.head--clear .header_columns .header_navigation .nav_link:hover {
+  color: #fff;
+}
+
+.head--clear .header_background {
+  background-color: #000;
+  opacity: 0;
+}
+
+/* white */
+.head--white {
+  color: #000;
+}
+
+.head--white .header_columns .header_navigation .nav_link {
+ color: #999;
+}
+
+.head--white .header_columns .header_navigation .nav_link:hover {
+  color: #fff;
+}
+
+.head--white .header_background {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* black */
+.head--black {
+  color: #fff;
+}
+
+.head-black .header_columns .header_navigation .nav_link {
+ color: #999;
+}
+
+.head--black .header_columns .header_navigation .nav_link:hover {
+  color: #fff;
+}
+
+.head--black .header_background {
+  background-color: #000;
+  opacity: 1;
+}
+
+
+/* header layout */
+#header .header_columns {
+  position: relative;
+  width: 100%;
+}
+
+#header .header_columns .wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+#header .header_columns .header_logotype {
+  float: left;
+}
+
+#header .header_columns .header_navigation {
+  float: right;
+}
+
+/* header logotype */
+#header .header_columns .header_logotype .logotype_alphaplus,
+#header .header_columns .header_logotype .logotype_a {
+  font-weight: 700;
+}
+
+#header .header_columns .header_navigation .nav_link {
+ display: inline;
+}
+
+#header .header_background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+.header .header_columns .header_navigation .navigation_button {
+  position: relative;
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin-right: -5px;
+}
+
+.header .header_columns .header_navigation .navigation_button .navigation_button_elements {
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  transition: 0.5s;
+  background-color: #000;
+}
+
+.header .header_columns .header_navigation .navigation_button .navigation_button_elements_top {
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.header .header_columns .header_navigation .navigation_button .navigation_button_elements_bottom {
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* responsive */
+/* desktop */
+@media (min-width: 1081px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 50px;
+  }
+
+  .header .header_columns {
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .header .header_columns .header_logotype .logotype_a {
+    display: none;
+  }
+
+  .header .header_columns .header_navigation .nav_link {
+   font-size: 20px;
+   padding-left: 20px;
+  }
+
+  .header .header_columns .header_navigation .navigation_button {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (max-width: 1080px) and (min-width:641px) {
+  .container {
+    max-width: 840px;
+    padding: 0 25px;
+  }
+
+  .header .header_columns {
+    height: 65px;
+    font-size: 18px;
+  }
+
+  .header .header_columns .header_logotype .logotype_a {
+    display: none;
+  }
+
+  .header .header_columns .header_navigation .nav_link {
+   font-size: 18px;
+   padding-left: 15px;
+  }
+
+  .header .header_columns .header_navigation .navigation_button {
+    display: none;
+  }
+}
+
+/* moblie */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .header .header_columns {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .header .header_columns .header_logotype {
+    line-height: 32px;
+  }
+
+  .header .header_columns .header_logotype .logotype_alphaplus {
+    display: none;
+  }
+
+  .header .header_columns .header_navigation .navigation {
+   display: none;
+  }
+}
+
+/* header =================================================================== */
+.footer {
+  height: 80px;
+}
+
+.footer .footer_columns {
+  max-width: 100%;
+}
+
+.footer .footer_columns .footer_us ul {
+  float: left;
+}
+
+.footer .footer_columns .footer_link ul {
+  float: right;
+}
+
+.footer .footer_columns .footer_items {
+  display: inline;
+  line-height: 80px;
+  font-size: 18px;
+  color: #999;
+}
+
+.footer .footer_columns .footer_link:hover {
+  color: #000;
+}
+
+.footer .footer_columns .footer_items .footer_item {
+  font-weight: 400;
+}
+
+.footer .footer_columns .footer_us .footer_items .footer_item {
+  margin-right: 20px;
+}
+
+.footer .footer_columns .footer_us .footer_items .workwithus .realcontact {
+  display: none;
+}
+
+.footer .footer_columns .footer_us .footer_items:hover .workwithus .fakecontact{
+  text-decoration: line-through;
+}
+
+.footer .footer_columns .footer_us .footer_items:hover .workwithus .realcontact{
+  display: inline;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item {
+  margin-left: 20px;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item .link_facebook_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_instagram_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_twitter_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_github_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_facebook,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_instagram,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_twitter,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_github {
+  display: none;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_facebook_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_instagram_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_twitter_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_github_r {
+  display: inherit;
+}
