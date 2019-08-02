@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*main header, only logo*/
+#al_hd_unclear_b {
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0%;
+    left: 0%;
+    background-color: #fff;
+}
+
+.al_hd_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.al_hd_logo {
+    width: 60px;
+}

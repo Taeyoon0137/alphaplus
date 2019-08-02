@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/* layout =================================================================== */
+.bg {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+  clear: both;
+}
+
+.disabled {
+  display: none;
+}
+
+/* header =================================================================== */
+.header {
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.header .header_columns {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+
+.header .header_columns .wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.header .header_columns .header_logotype {
+  float: left;
+  color: #fff;
+}
+
+.header .header_columns .header_logotype a {
+  font-size: 18px;
+}
+
+.header .header_columns .header_logotype .logotype_alphaplus,
+.header .header_columns .header_logotype .logotype_a {
+  font-weight: 700;
+}
+
+.header .header_columns .header_logotype .logotype_a {
+ display: none;
+}
+
+.header .header_columns .header_navigation .nav_link {
+ display: inline;
+ font-size: 18px;
+ padding-left: 20px;
+ color: #999;
+ transition: 0.2s;
+}
+
+.header .header_columns .header_navigation .nav_link:hover {
+  color: #fff;
+}
+
+.header .header_columns .header_navigation .link_about {
+  color: #fff;
+}
+
+.header .header_columns .header_navigation {
+  float: right;
+}
+
+.header .header_background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 1;
+}
+
+/* footer =================================================================== */
+.footer {
+  height: 80px;
+}
+
+.footer .footer_columns {
+  max-width: 100%;
+}
+
+.footer .footer_columns .footer_us ul {
+  float: left;
+}
+
+.footer .footer_columns .footer_link ul {
+  float: right;
+}
+
+.footer .footer_columns .footer_items {
+  display: inline;
+  line-height: 80px;
+  font-size: 18px;
+  color: #999;
+}
+
+.footer .footer_columns .footer_link:hover {
+  color: #000;
+}
+
+.footer .footer_columns .footer_items .footer_item {
+  font-weight: 400;
+}
+
+.footer .footer_columns .footer_us .footer_items .footer_item {
+  margin-right: 20px;
+}
+
+.footer .footer_columns .footer_us .footer_items .workwithus .realcontact {
+  display: none;
+}
+
+.footer .footer_columns .footer_us .footer_items:hover .workwithus .fakecontact{
+  text-decoration: line-through;
+}
+
+.footer .footer_columns .footer_us .footer_items:hover .workwithus .realcontact{
+  display: inline;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item {
+  margin-left: 20px;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item .link_facebook_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_instagram_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_twitter_r,
+.footer .footer_columns .footer_link .footer_items .footer_item .link_github_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_facebook,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_instagram,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_twitter,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_github {
+  display: none;
+}
+
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_facebook_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_instagram_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_twitter_r,
+.footer .footer_columns .footer_link .footer_items .footer_item:hover .link_github_r {
+  display: inherit;
+}
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* about ==================================================================== */
+
+.textbody_block {
+  width: 100%;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+.textbody_title {
+  float: left;
+  width: calc((100% - 60px) * 0.25);
+  margin-right: 20px;
+}
+
+.textbody_body {
+  float: left;
+  width: calc((100% - 60px) * 0.75);
+}
+/* cover */
+.about .about_coverimg {
+  width: 100%;
+  height: 500px;
+  background-color: gray;
+}
+
+.about .about_content .about_columns {
+  padding: 80px 0 100px 0;
+}
+
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* about ==================================================================== */
