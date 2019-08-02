@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+html {
+  background-color: #999;
+}
+/* pageload */
+.pageload {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+
+  animation-name: pageload;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.pageload .pageload_position {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.pageload .pageload_position .typo_loadquote, .pageload .pageload_position .typo_loadtext {
+  display: block;
+  margin: 0 auto;
+
+  font-family: 'Nanum Myeongjo';
+  font-weight: bold;
+  text-align: center;
+  color: #555;
+}
+
+.pageload .pageload_position .typo_loadquote {
+  font-size: 32px;
+}
+
+.pageload .pageload_position .typo_loadtext {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+@keyframes pageload {
+  from {
+    height: 100vh;
+  }
+
+  75% {
+    height: 100vh;
+  }
+
+  to {
+    height: 0vh;
+  }
+}
+
+/* background */
+.background {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background #background_video {
+	position : fixed;
+	top : 50%;
+	left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+	min-width : 100%;
+	min-height : 100%;
+	width : auto;
+	height : auto;
+	z-index : -1;
+}
