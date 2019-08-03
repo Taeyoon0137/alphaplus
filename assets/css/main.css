@@ -3,7 +3,7 @@
 /* pageload */
 .pageload {
   z-index: 10000;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   width: 100%;
   background-color: #fff;
@@ -72,3 +72,175 @@
 	height : auto;
 	z-index : -1;
 }
+
+/* slideover ================================================================ */
+.slideover {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.slideover .slideover_buttonarea {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  transition: 0.2s;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideover .slideover_buttonarea:hover {
+  opacity: 1;
+}
+
+.slideover .slideover_nextbuttonarea {
+  left: 0;
+}
+
+.slideover .slideover_previousbuttonarea {
+  right: 0;
+}
+
+/* highlight ================================================================ */
+.highlight {
+  background-color: #fff;
+}
+
+.highlight .highlight_columns {
+  padding: 80px 0 100px 0;
+}
+
+.highlight .highlight_columns .highlight_container {
+  margin-left: -20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item {
+  float: left;
+  width: calc((100% / 2) - 20px);
+  margin-left: 20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item a {
+  width: 100%;
+}
+
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgstop, .highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgmove {
+  width: 100%;
+  height: 100%;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgstop {
+  background-color: gray;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_item_pos .img_area_big .sample_imgmove {
+  display: none;
+  background-color: black;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_item_pos .img_area_big .sample_imgstop {
+  display: none;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_item_pos .img_area_big .sample_imgmove {
+  display: block;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_text {
+  text-decoration: underline;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_text {
+  max-width: 100%;
+  height: 100px;
+  padding: 15px 5% 0 0;
+  font-size: 18px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_text .highlight_genre {
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item .highlight_text .highlight_area {
+  display: none;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_text .highlight_genre {
+  display: none;
+}
+
+.highlight .highlight_columns .highlight_container .highlight_item:hover .highlight_text .highlight_area {
+  display: block;
+}
+
+.highlight .highlight_columns .highlight_more {
+  width: 220px;
+  height: 60px;
+  margin: 30px auto 0 auto;
+  border: 1px solid black;
+
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+}
+
+.highlight .highlight_columns .highlight_more:hover {
+  border: 1px solid black;
+  background-color: #000;
+
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* ========================================================================== */
+/* about ==================================================================== */

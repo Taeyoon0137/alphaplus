@@ -1,3 +1,11 @@
+
+window.addEventListener('scroll', function() {
+var el = document.querySelector('.header_background');
+
+if(window.scrollY >= 300px) el.classList.add('background');
+else el.classList.remove('background');
+});
+
 window.onload = ()=> {
   //header color
 
