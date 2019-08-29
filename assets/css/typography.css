@@ -1,7 +1,31 @@
 @charset "UTF-8";
 
-/* reset height */
-.typo_loadtext {
+/* import fonts */
+@import url("https://use.typekit.net/gnw4hkp.css");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@font-face { font-family: 'UhBeepuding'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+/* set fonts */
+body {
+  font-family: Providence Sans Pro, UhBeepuding, sans-serif;
+  /*font-family: SpoqaHanSans, sans-serif;*/
+  font-weight: 400;
+  font-style: normal;
+}
 
+h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* typography styles */
+.typo_link {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.typo_body {
+  font-size: 20px;
+  line-height: 32px;
 }
