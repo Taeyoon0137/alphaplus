@@ -1,107 +1,37 @@
 @charset "UTF-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
-.container {
-  position: relative;
-  margin: 0 auto;
+body.darkMode {background: #000; color: #fff;}
 
-  max-width: 1280px;
-  padding: 0 80px;
+#stickyHeader {position: relative; width: 100%; height: 0;}
+
+#mobileHeader {overflow: hidden; position: relative; width: 100%; height: 0px; transition: 0.5s; background: #fff;}
+#mobileHeader.header--active {height: 120px;}
+
+.stickyTop {z-index: 999; position: relative; width: 100%; height: 0;}
+.stickyTop .container {height: 60px;}
+.stickyTop .buttonPos {float: right; width: 36px; height: 60px;}
+.stickyTop .buttonPos #navbtn {z-index: 999; position: flex; width: 60px; height: 60px;}
+.stickyTop .buttonPos #navbtn .navbtn {position: relative; width: 20px; height: 8px; margin: 0 auto;}
+.stickyTop .buttonPos #navbtn .navbtn::before, .stickyTop #navbtn .navbtn::after {position: absolute; content: ''; display: block; width: 20px; height: 2px; background: #fff;}
+.stickyTop .buttonPos #navbtn .navbtn::before {top: 0;}
+.stickyTop .buttonPos #navbtn .navbtn::after {bottom: 0;}
+
+
+#welcome {position: relative; width:100vw; height: 120vw;}
+#welcome .welcomeTitle {color: #fffa;}
+#welcome .welcomeTitle .titleHighlight {color: #ffff;}
+
+@media (max-width: 480px) {
+.container {max-width: 100%; height: 100%; padding: 0 24px;}
+#welcome .welcomeNav {display: none;}
+#welcome .welcomeTitle {position: absolute; bottom: 60px; width: 100%; word-break: keep-all; font-weight: 700; font-size: 1.8rem; line-height: 1.2em;}
 }
 
-.container:after {
-  content:"";
-  clear:both;
-  display:block;
-}
-
-.samplespace {
-  width: 100%;
-  height: 2000px;
-}
-
-
-body {
-  scroll-snap-type: y proximity;
-  scroll-snap-stop: always;
-}
-
-/* welcome */
-#welcome {
-  scroll-snap-align: center;
-  position: relative;
-  width: 100vw;
-  height: 90vh;
-}
-
-#welcome h2 {
-  display: block;
-  position: absolute;
-  bottom: 45%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 80px;
-  font-weight: 700;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* gallery */
-#gallery {scroll-snap-align: start; position: relative; width: 100%; min-height: calc(100vh - 60px);}
-#gallery .gallerySelector {position: relative; width: 100%; height: 60px; font-size: 17px; line-height: 60px; list-style: none; text-align: center;}
-#gallery .gallerySelector ul {position: absolute;left: 50%; transform: translateX(-50%);}
-#gallery .gallerySelector ul:after {content:""; clear:both; display:block;}
-#gallery .gallerySelector .galleryListitem {float: left; margin-left: 20px; opacity: 0.3; transition: 0.5s;}
-#gallery .gallerySelector .galleryListitem:hover {opacity: 1;}
-#gallery.all .gallerySelector .galleryList_all, #gallery.ux_ui .gallerySelector .galleryList_ux_ui, #gallery.editorial .gallerySelector .galleryList_editorial, #gallery.product .gallerySelector .galleryList_product, #gallery.videography .gallerySelector .galleryList_videography {opacity: 1; text-decoration: underline;}
-#gallery .wrapper {padding: 0 0 120px 0; margin-right: -20px;}
-#gallery .wrapper:after {content:""; clear:both; display:block;}
-#gallery .galleryItem {display: inline-block; float: left; width: calc(((1440px - 160px) / 2) - 10px); height: calc(((((1440px - 160px) / 2) - 10px) * 0.75) + 120px); margin: 0 20px 60px 0; opacity: 1; transition: 0.5s;}
-#gallery .galleryItem a {display: block; width: 100%; height: 100%;}
-#gallery .galleryItem .galleryImg {width: 100%; height: calc(100% - 120px); background-color: #0001; background-position: center center; background-repeat: no-repeat; background-size: cover;}
-#gallery .galleryItem .galleryText {font-size: 20px; line-height: 32px; margin-top: 24px;}
-#gallery .galleryItem .galleryText .galleryDetail {display: none;}
-#gallery .galleryItem:hover .galleryText {text-decoration: underline;}
-#gallery .galleryItem:hover .galleryText .gallerySummary {display: none;}
-#gallery .galleryItem:hover .galleryText .galleryDetail {display: inline;}
-#gallery .ux_ui, #gallery .editorial, #gallery .product, #gallery .videography {display: none;}
-#gallery.ux_ui .ux_ui, #gallery.editorial .editorial, #gallery.product .product, #gallery.videography .videography,
-#gallery.all .ux_ui, #gallery.all .editorial, #gallery.all .product, #gallery.all .videography {display: inline-block;}
-
-/* whatssub */
-#gallery .gallery_whatssub .galleryImg {background-image: url(../img/thumbnail_whatssub.gif);}
-#gallery .gallery_whatssub:hover .galleryImg {background-image: url(../img/slideshow_whatssub.png);}
-
-
-
-
-/* footer */
-#footer {overflow: hidden; position: relative; z-index: 1; width: 100%; background: #fff;}
-#footer .container {max-width: 1376px; padding: 20px 32px; }
-#footer .footerLeft {float: left; font-weight: 700;}
-#footer .footerRight {float: right; font-weight: 700;}
-#footer .footer_leftItem {opacity: 0.3; margin-right: 20px;}
-#footer .footer_Contact {transition: 0.2s;}
-#footer .footer_Contact .footer_ContactMe {display: none;}
-#footer .footer_Contact:hover, #footer.js--active .footer_Contact {opacity: 1;}
-#footer .footer_Contact:hover .footer_ContactUs, #footer.js--active .footer_Contact .footer_ContactUs{text-decoration: line-through;}
-#footer .footer_Contact:hover .footer_ContactMe, #footer.js--active .footer_Contact .footer_ContactMe{display: inline;}
-#footer .footer_rightItem {opacity: 0.3; margin-left: 20px; transition: 0.2s;}
-#footer .footer_rightItem .link-active {display: none;}
-#footer .footer_rightItem:hover {opacity: 1;}
-#footer .footer_rightItem:hover .link-common{display: none;}
-#footer .footer_rightItem:hover .link-active{display: inline;}
-#footer .contact {overflow: hidden; position: relative; width: 100%; height: 0; background: #00000005; transition: 0.5s; color: #0000;}
-#footer .contact .typo_body {display: block; margin-top: 50px; transition: 0.5s; text-align: center;}
-#footer .contact .typo_link {display: block; transition: 0.5s; font-size: 24px; line-height: 80px; text-align: center; }
-#footer.js--active .contact {height: 270px; color: #0005;}
+#gallery {position: relative; width: 100%; background: #000;}
+#gallery .galleryItem {position: relative; width: 100%; margin-bottom: 40px;}
+#gallery .galleryItem .galleryPicture {position: relative; width: 100%; background-color: #fff;}
+#gallery .galleryItem .galleryPicture:before {content: ""; display: block; padding-top: 75%;}
+#gallery .galleryItem .content {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+#gallery .galleryItem .galleryInfo {padding-top: 12px; font-size: 1rem; line-height: 1.2em;}
+#gallery .galleryItem .galleryInfo .galleryTitle {font-weight: 500;}

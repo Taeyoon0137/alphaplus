@@ -21,197 +21,73 @@
     <link rel="stylesheet" href="https://use.typekit.net/gnw4hkp.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/setup.css">
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" media="screen and (min-width: 769px)" href="assets/css/desktop.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/mobile.css" />
-
-    <!--Libraries-->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
 
-  <body>
-    <section id="welcome" class="">
-      <div class="wrapper">
-        <h2>Taeyoon Lee</h2>
+  <body class="darkMode">
+    <div class="stickyTop">
+      <div class="container">
+        <div class="buttonPos">
+          <button id="navbtn" type="button" name="navbtn">
+            <div class="navbtn"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <header id="Header"></header>
+    <header id="mobileHeader">
+      <div class="container">
+
+      </div>
+    </header>
+    <section id="welcome">
+      <div class="container">
+        <!--상단 임시 네비게이션-->
+        <nav class="welcomeNav">
+          <li><a href="../designworks/">Designworks</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </nav>
+        <h2 class="welcomeTitle">안녕하세요.<br/>빠르게 변화하는 테크-인더스트리에서<br/><span class="titleHighlight">UX/UI 디자이너</span>로 근무하고픈- <br/><span class="titleHighlight">이태윤입니다.</span></h2>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="container">
+        <article class="galleryItem">
+          <div class="galleryPicture"><div class="content"></div></div>
+          <div class="galleryInfo">
+            <div class="galleryTitle">whassub!</div>
+        </article>
+        <article class="galleryItem">
+          <div class="galleryPicture"><div class="content"></div></div>
+          <div class="galleryInfo">
+            <div class="galleryTitle">whassub!</div>
+        </article>
+        <article class="galleryItem">
+          <div class="galleryPicture"><div class="content"></div></div>
+          <div class="galleryInfo">
+            <div class="galleryTitle">whassub!</div>
+        </article>
+        <article class="galleryItem">
+          <div class="galleryPicture"><div class="content"></div></div>
+          <div class="galleryInfo">
+            <div class="galleryTitle">whassub!</div>
+        </article>
+        <article class="galleryItem">
+          <div class="galleryPicture"><div class="content"></div></div>
+          <div class="galleryInfo">
+            <div class="galleryTitle">whassub!</div>
+        </article>
 
       </div>
     </section>
-
-    <section id="gallery" class="all">
-      <div class="container">
-        <div class="gallerySelector">
-          <ul>
-            <li class="galleryListitem galleryList_all">All</li>
-            <li class="galleryListitem galleryList_ux_ui">UX/UI</li>
-            <li class="galleryListitem galleryList_editorial">Editorial</li>
-            <li class="galleryListitem galleryList_product">Product</li>
-            <li class="galleryListitem galleryList_videography">Videography</li>
-          </ul>
-        </div>
-        <div class="wrapper">
-          <article class="galleryItem galleryBig gallery_whatssub ux_ui">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">UX/UI</span>
-                  <span class="galleryDetail">Sketch, Protopie, Zeplin</span>
-                </h4>
-                  <span class="gallerySummary">whatssub! - subscribe everyshing</span>
-                  <span class="galleryDetail">Lead Designer of iOS Application Design System<br>with Multiple Designers, and Developers</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_shaer ux_ui">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">UX/UI</span>
-                  <span class="galleryDetail">XD, Zeplin</span>
-                </h4>
-                  <span class="gallerySummary">Shaer - unite, save, change.</span>
-                  <span class="galleryDetail">iOS Application Design, and Service Planning<br>with Multipled Developers</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_alphaplus product">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">Product</span>
-                  <span class="galleryDetail">Fusion360, Keyshot, Sketch, Protopie</span>
-                </h4>
-                  <span class="gallerySummary">alphaplus - Finally Here</span>
-                  <span class="galleryDetail">Smartphone Product Design, even software</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_ehwa editorial">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">Editorial</span>
-                  <span class="galleryDetail">Photoshop, Illustrator, Indesign</span>
-                </h4>
-                  <span class="gallerySummary">Ehwa Mural Village</span>
-                  <span class="galleryDetail">Cross-fold Leaflet full of Murals</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_still19 videography">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">Motion Graphic</span>
-                  <span class="galleryDetail">Final Cut Pro X, Motion 5</span>
-                </h4>
-                  <span class="gallerySummary">Still 19. Our Graduation</span>
-                  <span class="galleryDetail">Fast, Simple Motion Graphic Video</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_whatis ux_ui">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">UX/UI</span>
-                  <span class="galleryDetail">Sketch, Zeplin</span>
-                </h4>
-                  <span class="gallerySummary">Whatis - Play Anywhere</span>
-                  <span class="galleryDetail">Android Application design, Cowork with Developers</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_designicon editorial">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">Editorial</span>
-                  <span class="galleryDetail">Photoshop, Illustrator, Indesign</span>
-                </h4>
-                  <span class="gallerySummary">20th Century Design Icon - Hartmut Esslinger</span>
-                  <span class="galleryDetail">4 Page Leaflet with Two-tone-Print</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_aragraphy ux_ui">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">UX/UI</span>
-                  <span class="galleryDetail">Sketch, Zeplin</span>
-                </h4>
-                  <span class="gallerySummary">Aragraphy - One photo, Single word.</span>
-                  <span class="galleryDetail">Lead Designer of iOS Application Design System</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_photos ux_ui">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">UX/UI</span>
-                  <span class="galleryDetail">XD, Zeplin</span>
-                </h4>
-                  <span class="gallerySummary">Photos - Remember me?</span>
-                  <span class="galleryDetail">Lead Designer of iOS Application Design System</span>
-              </div>
-            </a>
-          </article>
-          <article class="galleryItem galleryBig gallery_solar ux_ui">
-            <a href="#">
-              <div class="galleryImg"></div>
-              <div class="galleryText">
-                <h4>
-                  <span class="gallerySummary">UX/UI</span>
-                  <span class="galleryDetail">XD, Zeplin</span>
-                </h4>
-                  <span class="gallerySummary">Solar - Origin of Colors</span>
-                  <span class="galleryDetail">Lead Designer of iOS Application Design System</span>
-              </div>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer" class="">
-      <div class="container">
-        <div class="footerLeft">
-          <span class="typo_link footer_leftItem footer_Copyrights">Copyrights 2019 Alphaplus.</span>
-          <span class="typo_link footer_leftItem footer_Contact">wanna work with <span class="footer_ContactUs">us</span><span class="footer_ContactMe">me</span>?</span>
-          <!--<span class="typo_footItem footer_leftItem footer_Contact">이 디자이너는 UI만 하지 않습니다</span>-->
-        </div>
-        <div class="footerRight">
-          <a class="typo_link footer_rightItem" href="https://www.rocketpunch.com/@taeyoon0137"><span class="link-common">Rocketpunch</span><span class="link-active">BIMBAMBUM</span></a>
-          <a class="typo_link footer_rightItem" href="https://www.linkedin.com/in/taeyoon-lee-8466a3170"><span class="link-common">LinkedIn</span><span class="link-active">LinkedIn</span></a>
-          <a class="typo_link footer_rightItem" href="https://www.github.com/taeyoon0137"><span class="link-common">Github</span><span class="link-active">개발자아닙니다</span></a>
-        </div>
-      </div>
-      <div class="contact">
-        <div class="container">
-          <div class="typo_body">아래 메일로 간단히 원하는 작업을 설명 해 주시면,<br>확인 후 답장 남겨 드리겠습니다. 감사합니다.</div>
-          <div class="typo_link">taeyoon0137@gmail.com</div>
-        </div>
-      </div>
-    </footer>
-
     <!--Librarys-->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/jscripts.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/ie-checker.js"></script>
-
-
-    <!--Inline Scripts-->
+    <script type="text/javascript" src="assets/js/ie-checker.js"></script>
+    <script type="text/javascript" src="assets/js/jscripts.js"></script>
+    <script src="assets/js/jquery.fadethis.min.js"></script>
+    <script>$(window).fadeThis();</script>
   </body>
 </html>
